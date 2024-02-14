@@ -10,7 +10,7 @@ def get_operating_mode():
     return op_mode
 
 def get_note_ID():
-    id = input('Введите ID новой заметки:')
+    id = input('Введите ID новой заметки: ')
     return id
 
 def get_note_title():
@@ -22,9 +22,9 @@ def get_new_note_title():
     return title
 
 def get_note_body():
-    body = input('Введите тело заметки:')
+    body = input('Введите тело заметки: ')
     return body
 
 def get_new_body():
-    body = input('Введите новое содержимое заметки:')
+    body = input('Введите новое содержимое заметки: ')
     return body
