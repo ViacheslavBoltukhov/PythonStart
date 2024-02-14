@@ -89,8 +89,10 @@ def search_contact():
             print(contact_str + "\n")
 
 def copy_contact():
-    i_search_param = int(input('Введите номер копируемого контакта: ')) - 1
     contacts_list = read_file().rstrip().split("\n\n")
+    for num, elem in enumerate(contacts_list,1):
+        print(num, elem)
+    i_search_param = int(input('Введите номер копируемого контакта: ')) - 1
     while len(contacts_list) < i_search_param:
         print('Контакта с таким порядковым номером не существует')
         i_search_param = int(input('Введите номер копируемого контакта: ')) - 1
